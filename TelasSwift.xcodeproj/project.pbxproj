@@ -16,6 +16,8 @@
 		30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A122B23498C006ED30C /* ViewCodeProtocol.swift */; };
 		30957A172B235107006ED30C /* BlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A162B235107006ED30C /* BlueCoordinator.swift */; };
 		30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */; };
+		30957A1C2B235397006ED30C /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1B2B235397006ED30C /* GreenViewController.swift */; };
+		30957A1E2B2353A8006ED30C /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1D2B2353A8006ED30C /* GreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		30957A122B23498C006ED30C /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		30957A162B235107006ED30C /* BlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCoordinator.swift; sourceTree = "<group>"; };
 		30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		30957A1B2B235397006ED30C /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		30957A1D2B2353A8006ED30C /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				30957A0E2B23487B006ED30C /* BlueScreen */,
+				30957A1A2B235372006ED30C /* GreenScreen */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -122,6 +127,15 @@
 				30957A162B235107006ED30C /* BlueCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		30957A1A2B235372006ED30C /* GreenScreen */ = {
+			isa = PBXGroup;
+			children = (
+				30957A1B2B235397006ED30C /* GreenViewController.swift */,
+				30957A1D2B2353A8006ED30C /* GreenView.swift */,
+			);
+			path = GreenScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +211,9 @@
 				30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */,
 				30957A172B235107006ED30C /* BlueCoordinator.swift in Sources */,
 				30957A102B234937006ED30C /* BlueView.swift in Sources */,
+				30957A1E2B2353A8006ED30C /* GreenView.swift in Sources */,
 				309579FD2B234254006ED30C /* BlueViewController.swift in Sources */,
+				30957A1C2B235397006ED30C /* GreenViewController.swift in Sources */,
 				30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */,
 				309579F92B234254006ED30C /* AppDelegate.swift in Sources */,
 				309579FB2B234254006ED30C /* SceneDelegate.swift in Sources */,
