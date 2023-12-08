@@ -14,6 +14,8 @@
 		30957A052B234257006ED30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30957A032B234257006ED30C /* LaunchScreen.storyboard */; };
 		30957A102B234937006ED30C /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A0F2B234937006ED30C /* BlueView.swift */; };
 		30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A122B23498C006ED30C /* ViewCodeProtocol.swift */; };
+		30957A172B235107006ED30C /* BlueCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A162B235107006ED30C /* BlueCoordinator.swift */; };
+		30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		30957A062B234257006ED30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30957A0F2B234937006ED30C /* BlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
 		30957A122B23498C006ED30C /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		30957A162B235107006ED30C /* BlueCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCoordinator.swift; sourceTree = "<group>"; };
+		30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				30957A122B23498C006ED30C /* ViewCodeProtocol.swift */,
+				30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		30957A152B235082006ED30C /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				30957A162B235107006ED30C /* BlueCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */,
+				30957A172B235107006ED30C /* BlueCoordinator.swift in Sources */,
 				30957A102B234937006ED30C /* BlueView.swift in Sources */,
 				309579FD2B234254006ED30C /* BlueViewController.swift in Sources */,
 				30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */,
