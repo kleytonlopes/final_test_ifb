@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BlueViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .green
+        self.view.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
 
