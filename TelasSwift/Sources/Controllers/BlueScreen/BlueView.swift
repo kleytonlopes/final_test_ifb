@@ -13,11 +13,7 @@ class BlueView: UIView {
     var goToNextSreen: (() -> Void)?
     
     private lazy var greenButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("Go to Green", for: .normal)
-        button.backgroundColor = .systemGreen
-        button.layer.cornerRadius = 20
-        button.translatesAutoresizingMaskIntoConstraints = false
+        let button = ButtonDefault(title: "Go to Green", color: .systemGreen)
         button.addTarget(self, action: #selector(self.buttonDidTap), for: .touchUpInside)
         return button
     }()

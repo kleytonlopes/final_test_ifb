@@ -14,23 +14,14 @@ class GreenView: UIView {
     var goToBeforeSreen: (() -> Void)?
     
     private lazy var blueButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("Go to Blue", for: .normal)
-        button.backgroundColor = .systemBlue
-        button.layer.cornerRadius = 20
-        button.translatesAutoresizingMaskIntoConstraints = false
+        let button = ButtonDefault(title: "Go to Blue", color: .systemBlue)
         button.addTarget(self, action: #selector(self.buttonBlueDidTap), for: .touchUpInside)
         return button
     }()
     
     private lazy var redButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("Go to Red", for: .normal)
-        button.backgroundColor = .systemRed
-        button.layer.cornerRadius = 20
-        button.translatesAutoresizingMaskIntoConstraints = false
+        let button = ButtonDefault(title: "Go to Red", color: .systemRed)
         button.addTarget(self, action: #selector(self.buttonRedDidTap), for: .touchUpInside)
-
         return button
     }()
     

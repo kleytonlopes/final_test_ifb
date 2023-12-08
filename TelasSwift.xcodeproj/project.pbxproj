@@ -22,6 +22,7 @@
 		30957A232B235AC2006ED30C /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A222B235AC2006ED30C /* RedViewController.swift */; };
 		30957A252B235ACF006ED30C /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A242B235ACF006ED30C /* RedView.swift */; };
 		30957A272B235DD0006ED30C /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A262B235DD0006ED30C /* RedCoordinator.swift */; };
+		30957A2A2B235FB8006ED30C /* ButtonDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A292B235FB8006ED30C /* ButtonDefault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		30957A222B235AC2006ED30C /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		30957A242B235ACF006ED30C /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
 		30957A262B235DD0006ED30C /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
+		30957A292B235FB8006ED30C /* ButtonDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDefault.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		30957A0C2B234802006ED30C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				30957A282B235FA9006ED30C /* ReusableComponents */,
 				30957A152B235082006ED30C /* Coordinators */,
 				30957A142B235071006ED30C /* Controllers */,
 				30957A112B23493E006ED30C /* Protocols */,
@@ -156,6 +159,14 @@
 				30957A242B235ACF006ED30C /* RedView.swift */,
 			);
 			path = RedScreen;
+			sourceTree = "<group>";
+		};
+		30957A282B235FA9006ED30C /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				30957A292B235FB8006ED30C /* ButtonDefault.swift */,
+			);
+			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				30957A232B235AC2006ED30C /* RedViewController.swift in Sources */,
 				30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */,
 				309579F92B234254006ED30C /* AppDelegate.swift in Sources */,
+				30957A2A2B235FB8006ED30C /* ButtonDefault.swift in Sources */,
 				30957A272B235DD0006ED30C /* RedCoordinator.swift in Sources */,
 				309579FB2B234254006ED30C /* SceneDelegate.swift in Sources */,
 			);
