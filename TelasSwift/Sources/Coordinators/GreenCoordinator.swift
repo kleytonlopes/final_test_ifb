@@ -18,6 +18,20 @@ class GreenCoordinator{
 extension GreenCoordinator: CoordinatorProtocol {
     func start() {
         let viewController = GreenViewController()
+        viewController.goToBeforeSreen = {
+            self.goToBeforeScreen()
+        }
+        viewController.goToNextSreen = {
+            self.goToRedViewController()
+        }
         self.navigation.pushViewController(viewController, animated: true)
+    }
+    
+    private func goToBeforeScreen(){
+        self.navigation.popViewController(animated: true)
+    }
+    
+    private func goToRedViewController(){
+        print("Go to Red")
     }
 }

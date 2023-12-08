@@ -10,6 +10,8 @@ import UIKit
 class GreenView: UIView {
     let HEIGHT_BUTTON: CGFloat = 40.0
     let WIDTH_BUTTON: CGFloat = 150.0
+    var goToNextSreen: (() -> Void)?
+    var goToBeforeSreen: (() -> Void)?
     
     private lazy var blueButton : UIButton = {
         let button = UIButton()
@@ -17,6 +19,7 @@ class GreenView: UIView {
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(self.buttonBlueDidTap), for: .touchUpInside)
         return button
     }()
     
@@ -26,6 +29,8 @@ class GreenView: UIView {
         button.backgroundColor = .systemRed
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(self.buttonRedDidTap), for: .touchUpInside)
+
         return button
     }()
     
@@ -38,6 +43,13 @@ class GreenView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc private func buttonRedDidTap(){
+        goToNextSreen?()
+    }
+    
+    @objc private func buttonBlueDidTap(){
+        goToBeforeSreen?()
+    }
 }
 
 extension GreenView: ViewCodeProtocol {

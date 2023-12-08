@@ -8,8 +8,15 @@
 import UIKit
 
 class GreenViewController: UIViewController {
+    public var goToNextSreen: (() -> Void)?
+    public var goToBeforeSreen: (() -> Void)?
+
+    
     lazy var greenView: GreenView = {
         let view = GreenView()
+        view.goToNextSreen = self.goToNextSreen
+        view.goToBeforeSreen = self.goToBeforeSreen
+
         return view
     }()
     
