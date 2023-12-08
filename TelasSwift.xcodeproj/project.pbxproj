@@ -54,14 +54,30 @@
 		309579F72B234254006ED30C /* TelasSwift */ = {
 			isa = PBXGroup;
 			children = (
-				309579F82B234254006ED30C /* AppDelegate.swift */,
-				309579FA2B234254006ED30C /* SceneDelegate.swift */,
-				309579FC2B234254006ED30C /* ViewController.swift */,
-				30957A012B234257006ED30C /* Assets.xcassets */,
-				30957A032B234257006ED30C /* LaunchScreen.storyboard */,
+				30957A0D2B234809006ED30C /* Resources */,
+				30957A0C2B234802006ED30C /* Sources */,
 				30957A062B234257006ED30C /* Info.plist */,
 			);
 			path = TelasSwift;
+			sourceTree = "<group>";
+		};
+		30957A0C2B234802006ED30C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				309579F82B234254006ED30C /* AppDelegate.swift */,
+				309579FA2B234254006ED30C /* SceneDelegate.swift */,
+				309579FC2B234254006ED30C /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		30957A0D2B234809006ED30C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30957A012B234257006ED30C /* Assets.xcassets */,
+				30957A032B234257006ED30C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
