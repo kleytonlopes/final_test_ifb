@@ -68,8 +68,9 @@
 		30957A0C2B234802006ED30C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				30957A152B235082006ED30C /* Coordinators */,
+				30957A142B235071006ED30C /* Controllers */,
 				30957A112B23493E006ED30C /* Protocols */,
-				30957A0E2B23487B006ED30C /* BlueScreen */,
 				309579F82B234254006ED30C /* AppDelegate.swift */,
 				309579FA2B234254006ED30C /* SceneDelegate.swift */,
 			);
@@ -100,6 +101,21 @@
 				30957A122B23498C006ED30C /* ViewCodeProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		30957A142B235071006ED30C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30957A0E2B23487B006ED30C /* BlueScreen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30957A152B235082006ED30C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

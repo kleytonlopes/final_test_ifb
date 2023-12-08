@@ -14,7 +14,7 @@ class BlueView: UIView {
     private lazy var button : UIButton = {
         let button = UIButton()
         button.setTitle("Go to Green", for: .normal)
-        button.backgroundColor = .green
+        button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
