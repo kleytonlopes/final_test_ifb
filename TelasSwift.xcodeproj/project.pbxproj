@@ -21,6 +21,7 @@
 		30957A202B2359EE006ED30C /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */; };
 		30957A232B235AC2006ED30C /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A222B235AC2006ED30C /* RedViewController.swift */; };
 		30957A252B235ACF006ED30C /* RedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A242B235ACF006ED30C /* RedView.swift */; };
+		30957A272B235DD0006ED30C /* RedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A262B235DD0006ED30C /* RedCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
 		30957A222B235AC2006ED30C /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		30957A242B235ACF006ED30C /* RedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedView.swift; sourceTree = "<group>"; };
+		30957A262B235DD0006ED30C /* RedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				30957A162B235107006ED30C /* BlueCoordinator.swift */,
 				30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */,
+				30957A262B235DD0006ED30C /* RedCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				30957A232B235AC2006ED30C /* RedViewController.swift in Sources */,
 				30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */,
 				309579F92B234254006ED30C /* AppDelegate.swift in Sources */,
+				30957A272B235DD0006ED30C /* RedCoordinator.swift in Sources */,
 				309579FB2B234254006ED30C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

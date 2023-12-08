@@ -8,8 +8,13 @@
 import UIKit
 
 class RedViewController: UIViewController {
+    public var goToFirstSreen: (() -> Void)?
+    public var goToBeforeSreen: (() -> Void)?
+    
     lazy var redView: RedView = {
         let view = RedView()
+        view.goToFirstSreen = self.goToFirstSreen
+        view.goToBeforeSreen = self.goToBeforeSreen
         return view
     }()
     

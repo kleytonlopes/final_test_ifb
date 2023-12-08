@@ -1,5 +1,5 @@
 //
-//  GreenCoordinator.swift
+//  RedCoordinator.swift
 //  TelasSwift
 //
 //  Created by IFB-BIOTIC-16 on 08/12/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GreenCoordinator{
+class RedCoordinator{
     private var navigation: UINavigationController
     
     init(navigation: UINavigationController) {
@@ -15,14 +15,14 @@ class GreenCoordinator{
     }
 }
 
-extension GreenCoordinator: CoordinatorProtocol {
+extension RedCoordinator: CoordinatorProtocol {
     func start() {
-        let viewController = GreenViewController()
+        let viewController = RedViewController()
+        viewController.goToFirstSreen = {
+            self.goToFirstScreen()
+        }
         viewController.goToBeforeSreen = {
             self.goToBeforeScreen()
-        }
-        viewController.goToNextSreen = {
-            self.goToRedViewController()
         }
         self.navigation.pushViewController(viewController, animated: true)
     }
@@ -31,8 +31,7 @@ extension GreenCoordinator: CoordinatorProtocol {
         self.navigation.popViewController(animated: true)
     }
     
-    private func goToRedViewController(){
-        let nextCoordinator = RedCoordinator(navigation: self.navigation)
-        nextCoordinator.start()
+    private func goToFirstScreen(){
+        navigation.popToRootViewController(animated: true)
     }
 }

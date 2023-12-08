@@ -11,21 +11,26 @@ class RedView: UIView {
     let HEIGHT_BUTTON: CGFloat = 40.0
     let WIDTH_BUTTON: CGFloat = 150.0
     
+    var goToFirstSreen: (() -> Void)?
+    var goToBeforeSreen: (() -> Void)?
+    
     private lazy var blueButton : UIButton = {
         let button = UIButton()
         button.setTitle("Go to Blue", for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(self.buttonBlueDidTap), for: .touchUpInside)
         return button
     }()
     
     private lazy var greenButton : UIButton = {
         let button = UIButton()
         button.setTitle("Go to Green", for: .normal)
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(self.buttonGreenDidTap), for: .touchUpInside)
         return button
     }()
 
@@ -39,6 +44,13 @@ class RedView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc private func buttonBlueDidTap(){
+        goToFirstSreen?()
+    }
+    
+    @objc private func buttonGreenDidTap(){
+        goToBeforeSreen?()
+    }
 }
 
 extension RedView: ViewCodeProtocol {
@@ -62,7 +74,7 @@ extension RedView: ViewCodeProtocol {
     }
     
     func setupStyle() {
-        self.backgroundColor = .green
+        self.backgroundColor = .red
     }
     
     
