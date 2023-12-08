@@ -25,6 +25,7 @@ extension BlueCoordinator: CoordinatorProtocol {
     }
     
     private func goToGreenViewController(){
-        print("GoToGreenScreen")
+        let nextCoordinator = GreenCoordinator(navigation: self.navigation)
+        nextCoordinator.start()
     }
 }

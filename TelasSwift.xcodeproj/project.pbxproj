@@ -18,6 +18,7 @@
 		30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */; };
 		30957A1C2B235397006ED30C /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1B2B235397006ED30C /* GreenViewController.swift */; };
 		30957A1E2B2353A8006ED30C /* GreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1D2B2353A8006ED30C /* GreenView.swift */; };
+		30957A202B2359EE006ED30C /* GreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		30957A182B2351B8006ED30C /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		30957A1B2B235397006ED30C /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		30957A1D2B2353A8006ED30C /* GreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenView.swift; sourceTree = "<group>"; };
+		30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				30957A162B235107006ED30C /* BlueCoordinator.swift */,
+				30957A1F2B2359EE006ED30C /* GreenCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30957A202B2359EE006ED30C /* GreenCoordinator.swift in Sources */,
 				30957A192B2351B8006ED30C /* CoordinatorProtocol.swift in Sources */,
 				30957A172B235107006ED30C /* BlueCoordinator.swift in Sources */,
 				30957A102B234937006ED30C /* BlueView.swift in Sources */,
