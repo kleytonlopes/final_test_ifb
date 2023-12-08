@@ -8,10 +8,12 @@
 import UIKit
 
 class BlueViewController: UIViewController {
+    public var goToNextSreen: (() -> Void)?
+
+    
     lazy var blueView: BlueView = {
         let view = BlueView()
-//        view.onRegisterTap = self.onRegisterTap
-//        view.onLoginTap = self.onLoginTap
+        view.goToNextSreen = self.goToNextSreen
         return view
     }()
     
@@ -23,7 +25,6 @@ class BlueViewController: UIViewController {
     override func loadView() {
         self.view = blueView
     }
-
 
 }
 

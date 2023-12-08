@@ -17,6 +17,14 @@ class BlueCoordinator{
 
 extension BlueCoordinator: CoordinatorProtocol {
     func start() {
-        self.navigation.pushViewController(BlueViewController(), animated: false)
+        let viewController = BlueViewController()
+        viewController.goToNextSreen = {
+            self.goToGreenViewController()
+        }
+        self.navigation.pushViewController(viewController, animated: false)
+    }
+    
+    private func goToGreenViewController(){
+        print("GoToGreenScreen")
     }
 }
