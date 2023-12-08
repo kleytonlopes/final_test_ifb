@@ -12,6 +12,8 @@
 		309579FD2B234254006ED30C /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309579FC2B234254006ED30C /* BlueViewController.swift */; };
 		30957A022B234257006ED30C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30957A012B234257006ED30C /* Assets.xcassets */; };
 		30957A052B234257006ED30C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30957A032B234257006ED30C /* LaunchScreen.storyboard */; };
+		30957A102B234937006ED30C /* BlueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A0F2B234937006ED30C /* BlueView.swift */; };
+		30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30957A122B23498C006ED30C /* ViewCodeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		30957A012B234257006ED30C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30957A042B234257006ED30C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30957A062B234257006ED30C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30957A0F2B234937006ED30C /* BlueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueView.swift; sourceTree = "<group>"; };
+		30957A122B23498C006ED30C /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		30957A0C2B234802006ED30C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				30957A112B23493E006ED30C /* Protocols */,
 				30957A0E2B23487B006ED30C /* BlueScreen */,
 				309579F82B234254006ED30C /* AppDelegate.swift */,
 				309579FA2B234254006ED30C /* SceneDelegate.swift */,
@@ -84,8 +89,17 @@
 			isa = PBXGroup;
 			children = (
 				309579FC2B234254006ED30C /* BlueViewController.swift */,
+				30957A0F2B234937006ED30C /* BlueView.swift */,
 			);
 			path = BlueScreen;
+			sourceTree = "<group>";
+		};
+		30957A112B23493E006ED30C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				30957A122B23498C006ED30C /* ViewCodeProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30957A102B234937006ED30C /* BlueView.swift in Sources */,
 				309579FD2B234254006ED30C /* BlueViewController.swift in Sources */,
+				30957A132B23498C006ED30C /* ViewCodeProtocol.swift in Sources */,
 				309579F92B234254006ED30C /* AppDelegate.swift in Sources */,
 				309579FB2B234254006ED30C /* SceneDelegate.swift in Sources */,
 			);

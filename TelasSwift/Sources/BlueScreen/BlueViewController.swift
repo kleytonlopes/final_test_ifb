@@ -8,11 +8,20 @@
 import UIKit
 
 class BlueViewController: UIViewController {
+    lazy var blueView: BlueView = {
+        let view = BlueView()
+//        view.onRegisterTap = self.onRegisterTap
+//        view.onLoginTap = self.onLoginTap
+        return view
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
-        // Do any additional setup after loading the view.
+    }
+    
+    override func loadView() {
+        self.view = blueView
     }
 
 
